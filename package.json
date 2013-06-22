@@ -1,0 +1,16 @@
+{
+  "name": "Pixel8.jit.su",
+  "version": "0.0.0",
+  "description": "Pixel8 nodejitsu website and examples.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CoryG89/Pixel8.jit.su"
+  },
+  "author": "{ "name": "Cory Gross", "email": "CoryG89@gmail.com" }",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
