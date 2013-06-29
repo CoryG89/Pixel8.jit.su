@@ -1,0 +1,33 @@
+<% include includes/bootstrapHeader.html %>
+  <div class="form-horizontal text-center">
+    <input type="url" name="url-input" id="image-url-input" value="http://upload.wikimedia.org/wikipedia/commons/c/ce/Example_image.png" />
+    <button id="submit-btn" class="btn btn-primary">Submit</button>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="offset4 span4">
+      <div id="img-container"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+
+      var urlInput = $('#image-url-input');
+
+      urlInput.on('click', function () {
+        $(this).val('');
+      });
+
+      $('#submit-btn').on('click', function () {
+        var image = document.createElement('image');
+        image.src = urlInput.val();
+
+        image.onload = function () {
+          var container = document.getElementById('img-container');
+          container.appendChild(image);
+        };
+      });
+
+    });
+  </script>
+<% include includes/bootstrapFooter.html %>

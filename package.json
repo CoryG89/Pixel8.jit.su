@@ -1,16 +1,34 @@
 {
-  "name": "Pixel8.jit.su",
+  "name": "Pixel8",
   "version": "0.0.0",
   "description": "Pixel8 nodejitsu website and examples.",
+  "keywords": ["Pixelation", "Image Processing", "JavaScript"],
+  "homepage": "https://pixel8.jit.su",
+  "private": true,
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/CoryG89/Pixel8.jit.su"
   },
-  "author": "{ "name": "Cory Gross", "email": "CoryG89@gmail.com" }",
+  "author": {
+    "name": "Cory Gross",
+    "email": "CoryG89@gmail.com",
+	"url": "http://coryg89.github.io"
+  },
+  "dependencies": {
+    "express": "3.2.x",
+    "ejs": "*",
+	"ejs-locals": "*"
+  },
+  "scripts": {
+    "start": "node app.js",
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"clean": "rm -rf node_modules npm-debug.log"
+  },
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "subdomain": "pixel8",
+  "engines": {
+    "node": "0.8.x"
+  }
 }
