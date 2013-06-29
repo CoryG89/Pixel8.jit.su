@@ -1,5 +1,6 @@
 var express = require('express');
 var ejs = require('ejs');
+var engine = require('ejs-locals');
 
 /** Import local server module */
 var server = require('./server')
